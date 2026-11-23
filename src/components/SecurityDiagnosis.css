@@ -1,0 +1,213 @@
+.diagnosis-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.diagnosis-target-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.diag-input-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.clear-diag-btn {
+  position: absolute;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: color 0.15s ease;
+}
+
+.clear-diag-btn:hover {
+  color: #0f172a;
+}
+
+.test-examples {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.example-btn {
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.75rem;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.example-btn:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+.diagnosis-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+
+.diag-item-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  transition: border-color 0.15s ease;
+}
+
+.diag-item-card.severity-danger {
+  border-left: 4px solid #ef4444;
+  background-color: #fffaf0;
+}
+
+.diag-item-card.severity-warning {
+  border-left: 4px solid #f59e0b;
+  background-color: #fffdf5;
+}
+
+.diag-item-card.severity-safe {
+  border-left: 4px solid #10b981;
+  background-color: #f8fafc;
+}
+
+.diag-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.diag-item-title {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.diag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.diag-badge.danger {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.diag-badge.warning {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.diag-badge.safe {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.diag-item-desc {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.diag-solution {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  color: #1e293b;
+  margin-top: 0.2rem;
+  padding-top: 0.35rem;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.solution-tag {
+  background-color: #eff6ff;
+  color: #2563eb;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.empty-diagnosis {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  color: #64748b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.empty-icon {
+  color: #94a3b8;
+}
+
+.empty-diagnosis p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.reuse-warning-box {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.reuse-warning-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #991b1b;
+  margin-bottom: 0.35rem;
+}
+
+.reuse-warning-header h3 {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.reuse-icon {
+  color: #dc2626;
+  flex-shrink: 0;
+}
+
+.reuse-warning-text {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: #7f1d1d;
+  line-height: 1.5;
+}

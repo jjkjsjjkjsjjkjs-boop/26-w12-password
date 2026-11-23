@@ -36,7 +36,7 @@
 
 ## 실행 및 배포 링크
 
-- Netlify 배포 URL: 
+- Netlify 배포 URL: 9
 - GitHub Pages 배포 URL: 
 
 ## 나만의 확장 기능
